@@ -1,0 +1,23 @@
+body{ background:#fff;  margin:0px; color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:22px;}
+.wraper{ width:690px;  margin:0 auto;}
+input:hover{ opacity:0.86}
+#lab, #lab1, #lab2, #lab3, #lab4{ color : white}
+.play{ margin-top:90px; height:416px; }
+.play-left{ float:left; width:210px; background:#ff0000; height:416px; border-radius:20px;}
+.play-right{ float:right; width:418px;  height:416px; position:relative; }
+.yellow{ background:#ffff00; width:198px; height:198px;  border-radius:20px; position:absolute; left:0px; top:0px;}
+.blue{  background:#00afef; width:198px; height:198px;  border-radius:20px; position:absolute; right:0px; top:0px;}
+.green{ background:#92d050; width:198px; height:198px;  border-radius:20px; position:absolute; left:0px;bottom:0px; }
+.red{ background:#ff0000; width:198px; height:198px;  border-radius:20px; position:absolute; right:0px;bottom:0px; }
+.clr{ clear:both;}
+.red-cntr-btn{ color:#0F0; background:fff; padding:20px 0px 30px 30px; font-size:20px}
+.cntr-clr-box{ margin-top:30px; margin-left:20px;}
+.clr-box1{color:#ff0000; }
+.clr-box2{color:#00afef; margin-left:16px; }
+.clr-box3{color:#92d050; margin-right:0px; margin-left:16px;  }
+.cntr-clr-box input{ border:none; border-radius:5px;font-weight:bold; font-size:20px; padding:4px 8px; margin-right:10px;}
+.buttns{ margin-top:40px;}
+.buttns input{ padding:10px 0px; width:81%; margin-left:20px; text-align:center; margin-bottom:8px; border:none; border-radius:5px;}
+.arw-box{ margin-top:30px;}
+.arw-box input{}
+.btn-left{ background:#dddac7 url(../images/left-btn.png) no-repeat; width:66px; height:66px; border:none; border-radius:6px; margin-left:20px; float:left}.btn-right{ background:#dddac7 url(../images/right-btn.png) no-repeat; width:66px; height:66px; border:none; border-radius:6px; margin-right:20px; float:right}

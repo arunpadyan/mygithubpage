@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+function onload(){
+
+	}
+function changc(){
+	document.getElementById("redc").style['background']="green";
+}
+function changcr(){
+	document.getElementById("redc").style['background']="red";
+}
+function changcb(){
+	document.getElementById("redc").style['background']="blue";
+}
+
+function swapfor(){
+
+var i = document.getElementById('lab').innerHTML;
+if (i==1){	
+document.getElementById('yel').style.backgroundColor='#92d050';
+document.getElementById('blu').style.backgroundColor='#ffff00';
+document.getElementById('red').style.backgroundColor='#00afef';
+document.getElementById('gree').style.backgroundColor='#ff0000';
+document.getElementById('lab').innerHTML = 2 ;
+}
+
+
+if (i == 2){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#ff0000';
+document.getElementById('blu').style.backgroundColor='#92d050';
+document.getElementById('red').style.backgroundColor='#ffff00';
+document.getElementById('gree').style.backgroundColor='#00afef';
+document.getElementById('lab').innerHTML = 3 ;
+}
+
+if (i == 3){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#00afef';
+document.getElementById('blu').style.backgroundColor='#ff0000';
+document.getElementById('red').style.backgroundColor='#92d050';
+document.getElementById('gree').style.backgroundColor='#ffff00';
+document.getElementById('lab').innerHTML = 4 ;
+}
+
+if (i == 4){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#ffff00';
+document.getElementById('blu').style.backgroundColor='#00afef';
+document.getElementById('red').style.backgroundColor='#ff0000';
+document.getElementById('gree').style.backgroundColor='#92d050';
+document.getElementById('lab').innerHTML = 1 ;
+}
+}
+
+function swapback(){
+
+var i = document.getElementById('lab').innerHTML;
+if (i==3){	
+document.getElementById('yel').style.backgroundColor='#92d050';
+document.getElementById('blu').style.backgroundColor='#ffff00';
+document.getElementById('red').style.backgroundColor='#00afef';
+document.getElementById('gree').style.backgroundColor='#ff0000';
+document.getElementById('lab').innerHTML = 2 ;
+}
+
+
+if (i == 4){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#ff0000';
+document.getElementById('blu').style.backgroundColor='#92d050';
+document.getElementById('red').style.backgroundColor='#ffff00';
+document.getElementById('gree').style.backgroundColor='#00afef';
+document.getElementById('lab').innerHTML = 3 ;
+}
+
+if (i == 1){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#00afef';
+document.getElementById('blu').style.backgroundColor='#ff0000';
+document.getElementById('red').style.backgroundColor='#92d050';
+document.getElementById('gree').style.backgroundColor='#ffff00';
+document.getElementById('lab').innerHTML = 4 ;
+}
+
+if (i == 2){	
+var i = document.getElementById('lab').innerHTML;
+document.getElementById('yel').style.backgroundColor='#ffff00';
+document.getElementById('blu').style.backgroundColor='#00afef';
+document.getElementById('red').style.backgroundColor='#ff0000';
+document.getElementById('gree').style.backgroundColor='#92d050';
+document.getElementById('lab').innerHTML = 1 ;
+}
+}
+function move(){
+	
+	 var j = parseInt(document.getElementById('lab1').innerHTML);	 
+	 j = j+ 10;
+     document.getElementById('blu').style.right  = j + 'px';
+     document.getElementById('lab1').innerHTML= j;
+	 	 var f = parseInt(document.getElementById('lab2').innerHTML);	 
+	 f = f+ 1;
+     document.getElementById('red').style.bottom  = f + 'px';
+     document.getElementById('lab2').innerHTML= f;
+	 	 var k = parseInt(document.getElementById('lab1').innerHTML);	 
+	 k = k+ 1;
+     document.getElementById('yel').style.top  = k + 'px';
+     document.getElementById('lab3').innerHTML= k;
+	 var l = parseInt(document.getElementById('lab1').innerHTML);	 
+	 l = l+ 1;
+     document.getElementById('gree').style.left  = l + 'px';
+     document.getElementById('lab4').innerHTML= l;	 
+	} 
+
+function moveright(){
+	document.getElementById('lab4').innerHTML= 0 ;
+	document.getElementById('lab3').innerHTML= 0 ;
+	document.getElementById('lab1').innerHTML= 0 ;
+	document.getElementById('lab2').innerHTML= 0 ;
+ setInterval("move()", 1); }
+
+</script>
+<title>Play with the boxes</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="onload()">
+
+
+<div class="wraper">
+
+
+<div class="play">
+<div class="play-left" id="redc">
+<div class="cntr-clr-box">
+<input type="button" value="R" class="clr-box1" onclick='javascript:changcr()'/>
+<input type="button" value="B" class="clr-box2" onclick='javascript:changcb()' />
+<input type="button" value="G" class="clr-box3" onclick='javascript:changc()'  />
+</div>
+
+
+<div class="buttns">
+<input name="#" type="submit" value="SWAP FORWARD" onclick="javascript:swapfor()"/>
+<input name="#" type="submit" value="SWAP BACKWARD" onclick="javascript:swapback()"/>
+<input name="#" type="submit" value="CYCLE FORWARD" />
+<input name="#" type="submit" value="CYCLE BACKWARD" onclick="javascript:moveright()"/>
+</div>
+
+
+
+<div class="arw-box">
+<input name="#" type="submit" value="" class="btn-left"/>
+<input name="#" type="submit" value="" class="btn-right"/>
+<div class=" clr"></div>
+
+
+</div>
+
+
+
+</div>
+<div class="play-right"><br />
+<div class="yellow" id="yel"></div>
+<div class="blue" id="blu"></div>
+<div class="green" id="gree"></div>
+<div class="red" id="red"></div>
+</div>
+
+<div class=" clr"></div>
+
+</div>
+</div>
+
+<label id="lab" >1</label>
+<label id="lab1" >1</label>
+<label id="lab2" >1</label>
+<label id="lab3" >1</label>
+<label id="lab4" >1</label>
+
+</body>
+</html>
