@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>ChES</title>
+	</head>
+
+
+	<script src="code.js"></script>
+	<body bgcolor="#E6E6FA">	       
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="design.css" />
+    <center><div class="site-wrapper-inner">
+    <div class="wraper1">
+    
+    
+	<h2>Create Your ChES Account</h2> <br />
+    
+    
+	<div class="txt1">
+    <div class="txt-lf1"> First Name :</div>
+    <div class="txt-rg1"><input type="text" id="text1" onfocusout="goo();"/> <br />
+	                    <label id="lab1"> </label> <br />
+    </div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    
+    
+    <div class="txt">
+    <div class="txt-lf1">Last Name :  </div> 
+    <div class="txt-rg1"> <input type="text" id="text2" onfocusout="lname();" /><br />
+	                     <label id="lab2"> </label><br />
+    </div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    <div class="txt">
+    <div class="txt-lf1">Phone Number :</div>
+    <div class="txt-rg1"> <input type="text" id="text3" maxlength="10" onfocusout="goo();" /><br />
+	                      <label id="lab3"> </label> 	<br />
+    </div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    
+    <div class="txt">
+    <div class="txt-lf1">Email id  :</div> 
+    <div class="txt-rg1"><input type="text" id="text4" onfocusout="mailcheker();" /><br />
+	<label id="lab4"> </label><br /></div>
+    <div class=" clr"></div>
+    </div>
+
+	<div class="txt">
+    <div class="txt-lf1">State  :</div> 
+    <div class="txt-rg1">
+    <select name="state">
+	<option selected="" value="Default">(Please select a state)</option>
+	<option value="AF">Andhra Pradesh</option>
+	<option value="AL">Delhi</option>
+	<option value="DZ">Karnataka</option>
+	<option value="AS">Kerala</option>
+	<option value="AD">Tamil Nadu</option>
+	</select><br />
+	<label id="lab9"> </label><br /></div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    <div class="txt">
+    <div class="txt-lf1">Password  :  </div> 
+    <div class="txt-rg1"><input type="password" id="text5"/><br onfocusin="javascript:onfo()"/>
+	<label id="lab5"> </label><br /></div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    
+    <div class="txt">
+    <div class="txt-lf1">Confirm Password :</div> 
+    <div class="txt-rg1"><input type="password" id="text6"/><br />
+	<label id="lab6"> </label> <br /></div>
+    <div class=" clr"></div>
+    </div>
+    
+    
+    
+    
+	
+    <center><input type="button" id="bSubmit" value="Submit" onclick="javascript:doit()" class="btn btn-xs btn-primary" style=" width:75px;" /></center>
+    <div class=" clr"></div>	
+    
+    </div>	
+    </div>
+    </center>
+	</body>
+</html>

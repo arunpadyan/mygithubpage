@@ -1,0 +1,19 @@
+.wraper1{ width:500px; margin:0px auto; margin-top:50px; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+.wraper1 input{ padding:4px 10px 4px 10px; border:solid #CCC 1px; width:170px;}
+				
+#text1{
+	border-color: silver;
+	border-width: 1px ;
+	
+}
+				
+#lab1, #lab2, #lab3, #lab4, #lab5, #lab6 {
+	font-size: 12px;
+	color: red;
+	
+}
+
+
+.txt-lf1 { width:150px; float:left;}
+.txt-rg1{ width:300px; float:left;}
+.btn1{ margin-left:152px; width:200px;}
